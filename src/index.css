@@ -1,0 +1,78 @@
+.blinking {
+	animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+	0% {
+		color: #4e5255;
+	}
+	49% {
+		color: #4e5255;
+	}
+	60% {
+		color: transparent;
+	}
+	99% {
+		color: transparent;
+	}
+	100% {
+		color: #4e5255;
+	}
+}
+
+.blueText {
+	color: #0244be !important;
+}
+
+.projectModal {
+	color: #4e5255 !important;
+}
+.projectModal p {
+	word-spacing: normal !important;
+}
+
+.projectModal h1 {
+	font-size: 130% !important;
+	font-weight: 600 !important;
+}
+
+.hiddenScrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+
+	z-index: -99;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #4e5255;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #4e5255;
+}
+
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*Set Icon Color*/
+
+svg {
+	stroke: #b9b9b9 !important;
+}
+
+.blueIconColor {
+	filter: invert(13%) sepia(93%) saturate(4408%) hue-rotate(213deg)
+		brightness(91%) contrast(106%);
+}
