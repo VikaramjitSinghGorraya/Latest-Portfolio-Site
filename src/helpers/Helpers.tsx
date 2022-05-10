@@ -24,7 +24,7 @@ export const ScrollToPage = async (
 
 export const displayTabTitle = (locationPath) => {
 	if (locationPath === '/') {
-		document.title = 'Home | Blogaramaa';
+		document.title = 'Home | Vikaramjit Singh';
 		return;
 	}
 	if (locationPath.includes('post')) {
