@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { VStack, Box, useColorMode } from '@chakra-ui/react';
+import { displayTabTitle } from './helpers/Helpers';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Resume from './pages/Resume';
 
 function App() {
 	const navigate = useNavigate();
-
+	const location = useLocation();
 	const { colorMode } = useColorMode();
 
 	const [mode, setMode] = useState(
@@ -16,7 +17,8 @@ function App() {
 
 	useEffect(() => {
 		setMode(localStorage.getItem('chakra-ui-color-mode'));
-	}, [colorMode]);
+		displayTabTitle(location.pathname);
+	}, [colorMode, location.pathname]);
 
 	return (
 		<Box

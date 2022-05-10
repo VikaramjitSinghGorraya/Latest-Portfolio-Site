@@ -21,3 +21,21 @@ export const ScrollToPage = async (
 	scrollTarget(target, offset);
 	closeNavbar();
 };
+
+export const displayTabTitle = (locationPath) => {
+	if (locationPath === '/') {
+		document.title = 'Home | Blogaramaa';
+		return;
+	}
+	if (locationPath.includes('post')) {
+		const tabTitle = locationPath.substring(6, locationPath.length);
+		document.title = tabTitle.includes('-')
+			? `${tabTitle.replace('-', ' ')} | Vikaramjit Singh`
+			: `${tabTitle} | Vikaramjit Singh`;
+		return;
+	}
+	document.title = `${locationPath.substring(
+		1,
+		locationPath.length
+	)} | Vikaramjit Singh`;
+};
