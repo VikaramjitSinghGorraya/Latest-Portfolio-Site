@@ -5,11 +5,9 @@ import ProjectCard from './ProjectCard';
 import SectionHeading from './SectionHeading';
 
 const ProjectSection = () => {
-	const { isLoading: projectsLoading, data: projectsData } = useGetProjects();
+	const { data: projectsData } = useGetProjects();
 
-	return projectsLoading ? (
-		''
-	) : (
+	return (
 		<VStack w='100%' alignItems='flex-start' spacing={6}>
 			<SectionHeading heading='some projects' />
 			<Flex
