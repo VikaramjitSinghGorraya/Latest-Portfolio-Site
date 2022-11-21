@@ -16,7 +16,7 @@ const headingTheme = {
 		},
 
 		smallTopHeading: {
-			fontSize: ['3.2vw !important ', '160% !important'],
+			fontSize: ['3.2vw !important ', '145% !important'],
 		},
 	},
 
