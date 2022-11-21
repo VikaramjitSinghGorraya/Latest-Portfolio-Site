@@ -61,7 +61,7 @@ const WelcomeSection = () => {
 					variant='smallTopHeading'
 					position='absolute'
 					top={['9.2vw', '60px']}
-					left={['6vw', '30px']}
+					left={['6vw', '42px']}
 				>
 					Hi, I am <span className='blueText'>Vikaramjit Singh</span>
 				</Heading>
