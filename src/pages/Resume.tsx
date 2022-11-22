@@ -5,7 +5,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'react-lazy-load-image-component/src/effects/black-and-white.css';
 import first from '../icons/0001.jpg';
-import second from '../icons/0002.jpg';
 import { ReactComponent as ResumeIcon } from '../icons/Resume.svg';
 import PageHeading from '../components/PageHeading';
 import {
@@ -18,25 +17,13 @@ const MotionButton = motion(Button);
 const Resume = () => {
 	const displayResume = () => {
 		return (
-			<Flex
-				direction={['column', 'row']}
-				justifyContent={['center', 'space-between']}
-				minH='100vh'
-				w='100%'
-			>
+			<Flex>
 				<LazyLoadImage
 					effect='blur'
 					height='100%'
 					src={first}
 					alt='image'
-					width='100%'
-				/>
-				<LazyLoadImage
-					effect='blur'
-					height='100%'
-					src={second}
-					alt='image'
-					width='100%'
+					width='auto'
 				/>
 			</Flex>
 		);
