@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'react-lazy-load-image-component/src/effects/black-and-white.css';
-import first from '../icons/0001.jpg';
+import first from '../icons/0003.png';
 import { ReactComponent as ResumeIcon } from '../icons/Resume.svg';
 import PageHeading from '../components/PageHeading';
 import {
